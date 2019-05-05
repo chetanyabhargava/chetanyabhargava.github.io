@@ -1,28 +1,71 @@
 <html>
 <head>
 <title>help</title>
+<style>
+body {
+	font-family: 'Open Sans', sans-serif;
+  background:#ccf34a;
+  margin: 0 auto 0 auto;  
+  width:100%; 
+  text-align:center;
+} 
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 5;
+    cursor: pointer;
+    /*width: 340px;*/
+    display: inline-block;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+button:hover {
+    opacity: 0.8;
+}
+</style>
 </head>
 <body bgcolor="lightgreen">
-<font size="25">
-<center>HELP!</center>
-</font>
-fill address and click on the help button for home help!<br><br>
-<script type="text/javascript">
-	function showmessage()
-	{
-		var ad = document.getElementById('address').value;
-		alert("help will be send on the given address -: "+ad);
-	}
-	
+<font size="5">
+<center><b><u>HELP!</u></b></center>
+<br>
+<br>
+<br>
+<br>
 
-</script>
+Fill address and click on the help button for home help!<br>
 ADDRESS:
     <input type="text" name="address" id="address" /><br>
-	<input type="button" id="btnshowmsg" value="HELP" onclick='showmessage()'/><br>
+	
+
+ 
+<button onclick="myFunction()">Refresh</button>
+
+<script>
+function myFunction() {
+    var elements = document.getElementsByTagName("input");
+    for (var ii=0; ii < elements.length; ii++) {
+      if (elements[ii].type == "text") {
+        elements[ii].value = "";
+      }
+   }
+}
+</script>
+	<a id="mybutton" href="C:\Users\R K S\Desktop\farming project\site\thankyou.html" title="Link to Submit">
+  <button>Submit</button>
+ </a>
+</br>
+ <br>
+<br>
+<br>
+<br>
+
 TOLLFREE NUMBER-:1800-180-1551<br>
 CUSTOMER CARE-:7737510758<br>
 HELP REGARDING BUY/SELL-:8003064705<br>
 HOME SERVICE FOR LEARNING WEBSITE-:7665533459<br>
+</font>
 
 </body>
 </html>
